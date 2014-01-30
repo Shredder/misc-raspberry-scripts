@@ -33,6 +33,7 @@ config=([user.name]="${USER_NAME:-Joerg Ziefle}"
         [alias.ci]=commit
         [alias.cl]=clone
         [alias.co]=checkout
+        [alias.di]=diff
         [alias.fe]=fetch
         [alias.gr]=grep
         [alias.in]=init

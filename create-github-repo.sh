@@ -1,5 +1,7 @@
 #!/bin/bash
 
+DEFAULT_USER=Shredder
+
 if [[ "$#" < 2 ]]; then
   read -p "Github User> " USER
   read -p "Repo name> " REPO
@@ -8,4 +10,4 @@ else
   REPO=$2
 fi
 
-curl -u $USER https://api.github.com/user/repos -d "{'name': '$REPO'}"
+curl -u "${USER:-$DEFAULT_USER}" https://api.github.com/user/repos -d "{'name': '$REPO'}"
