@@ -29,6 +29,7 @@ config=([user.name]="${USER_NAME:-Joerg Ziefle}"
         [core.pager]=less
         [core.editor]=vim
         [merge.tool]=vimdiff
+        [push.default]=simple
         [alias.br]=branch
         [alias.ci]=commit
         [alias.cl]=clone
