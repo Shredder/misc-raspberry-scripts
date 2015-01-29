@@ -10,4 +10,4 @@ else
   REPO=$2
 fi
 
-curl -u "${USER:-$DEFAULT_USER}" https://api.github.com/user/repos -d "{'name': '$REPO'}"
+curl -u "${USER:-$DEFAULT_USER}" https://api.github.com/user/repos -d "{\"name\": \"$REPO\"}"
